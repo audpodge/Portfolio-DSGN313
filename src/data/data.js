@@ -1,13 +1,13 @@
 // CUSTOMIZE THIS FILE TO ADD YOUR OWN DATA
 
 const data = {
-    name: "John Doe",
-    bio: "Undergraduate Architectural Student at University of Calgary passionate about building tools to make homes more affordable.",
+    name: "AUDREY DI PERNO",
+    bio: "Undergraduate Design Student at University of Calgary who's passionate about learning, inclusive experiences, and creating safe spaces.",
     contact: {
-        email: "john.doe@gmail.com",
-        phone: "+12345678910",
+        email: "audreydiperno@gmail.com",
+        phone: "+587 229 0941",
         linkedin: "https://www.linkedin.com/",
-        github: "https://www.github.com/",
+        github: "https://github.com/audpodge",
     }
 }
 

@@ -67,6 +67,10 @@ a:hover {
 h1 {
   /* Heading font size */
   font-size: 2.5em;
+  
+}
+#lol {
+  margin-top: 60px;
 }
 
 #projects {
@@ -82,7 +86,6 @@ h1 {
   /* Row layout for projects */
   display: flex;
   justify-content: center;
-  padding-top: 5em;
 }
 
 .three-model {
@@ -95,7 +98,7 @@ h1 {
 #model1,
 #model2,
 #model3 {
-  height: 300px;
+  height: 500px;
   width: 300px;
   margin-right: 3em;
   margin-left: 6em;
@@ -104,18 +107,20 @@ h1 {
 
 img {
   /* Image dimensions and margin */
-  height: 120px;
+  height: 200px;
   width: 120px;
   margin: 0.5em;
 }
 
 #images {
   /* Center image container */
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 10px; 
   justify-content: center;
   align-items: center;
-  height: 8em;
-  margin-bottom: 2em;
+  margin-bottom: 30px;
 }
 
 #images-row {
@@ -127,14 +132,23 @@ img {
 }
 
 #description {
-  /* Center description content */
+   /* Restrict description height and enable scrolling */
   display: flex;
-  align-items: center;
-  height: 4em;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: auto;
+  max-height: 8em;  /* Changes the size of the text box */
   width: 35em;
+  overflow-y: scroll;
+  overflow-x: hidden;
   font-weight: 100;
-  margin-left: 2em;
-  margin-top: 3em;
+  margin-left: 0em;
+  margin-top: 0em;
+  padding: 0.5em;
+  background: rgba(0, 0, 0, 0.1); /* Changes the color of the background of the text box */
+  border: 1px solid rgba(255, 255, 255, 0); /* Changes the color of the border of the text box */
+  box-sizing: border-box;
+  scrollbar-width: none; /* If you want to see your scroll bar - just delete this part*/
 }
 
 @media screen and (max-width: 768px) {

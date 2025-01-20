@@ -96,9 +96,7 @@ I’ve come to understand, that what is in this exquisite corpse is a world I wa
     <ul id="footer-items">
       <li>Email: ${data.contact.email}</li>
       <li>Phone: ${data.contact.phone}</li>
-      <li>LinkedIn: <a href="${data.contact.linkedin}">${
-  data.contact.linkedin
-}</a></li>
+      <li style="display:none">LinkedIn: <a href="${data.contact.linkedin}">${data.contact.linkedin}</a></li>
       <li>GitHub: <a href="${data.contact.github}">${
   data.contact.github
 }</a></li>
